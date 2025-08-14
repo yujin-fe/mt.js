@@ -9,6 +9,13 @@ const people = [
 
 function getAdults(peopleArray) {
   // 이곳에 코드를 작성합니다.
+  let adult = [];
+  for(person of peopleArray){
+    if(person['age']>=20){
+      adult.push(person);
+    }
+  }
+  return adult;
 }
 
 console.log(getAdults(people));

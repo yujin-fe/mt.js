@@ -3,9 +3,12 @@ const scores = [85, 92, 78, 96, 88];
 
 function getAverage(scoreArray) {
   // 이곳에 코드를 작성합니다.
-  for( let value of scoreArray){
-    
+  let totalscore=0;
+  for(value of scoreArray){
+    totalscore+=value
   }
+  let average = totalscore/scoreArray.length
+  return average
 }
 
 console.log(getAverage(scores)); // 87.8이 출력되어야 함
